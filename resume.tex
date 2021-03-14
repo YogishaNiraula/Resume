@@ -1,0 +1,153 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}    
+\usepackage{pdfpages}%
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{multicol}
+% adjust the page margins
+\usepackage[scale=0.8,top=0.5cm, bottom=0.1cm]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+% personal data
+
+\name{Yogisha}{Niraula}                               % optional, remove / comment the line if not wanted
+% \address{70 Absolute Ave.}{L4Z 0A4 Mississauga}{Canada}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace*{3mm}
+\phone[mobile]{(+977)9843367660}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{yogishaniraula@gmail.com}                               % optional, remove / comment the line if not wanted
+ \social[github]{YogishaNiraula}   
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-10mm}
+
+\section{Objective}
+{Highly motivated, self-starting developer seeking to launch a career
+building web services. Familiar with web development and deployment process. Has a passion for learning new things.}
+
+\section{Endeavours}
+\cventry{}{}{Internalaya}{ Jan 2021 -- Present \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Developed Nepal's first platform for paid and purposeful internships
+\item Used VUE,VUEX and Vuera 
+\end{itemize}}
+\vspace{0.5em}
+
+
+\cventry{}{}{Self-taught Web developer}{May 2020 -- Dec 2020 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Design and implement front end interfaces based on user stories
+\item Build
+responsive websites with help of modern frameworks
+\end{itemize}}
+
+\section{Projects}
+
+\cventry{}{}{Landing Page}{July 2020 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Beautiful landing page for local business around me.
+\end{itemize}}
+% \vspace{-1.0em}
+
+\cventry{}{}{Survey}{Sept 2020\vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Basic Survey App with basic form submissions and validations.
+\end{itemize}}
+
+\cventry{}{}{Banking App}{Nov 2020 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item Basic Finance Tracking app to determine saving, expenditure and profit.
+\end{itemize}}
+% \vspace{1.}
+
+\cventry{}{}{Internalaya}{Jan 2021 \vspace{-1.0em}}{}{
+% Detailed achievements:%
+\begin{itemize}
+\item User based site with 
+\end{itemize}}
+% \vspace{1.}
+
+\section{Skills}
+
+{}{Languages:}
+\vspace{-1.0em}\begin{small}
+ \begin{multicols}{3}
+    \begin{itemize}
+\item Javascript
+\item Python
+    \end{itemize}
+    \end{multicols}\end{small}
+    
+{}{CSS Frameworks:}
+\vspace{-1.0em}\begin{small}
+ \begin{multicols}{3}
+    \begin{itemize}
+\item Bootstrap
+\item Bulma
+\item Tailwind
+    \end{itemize}
+    \end{multicols}\end{small}
+    
+{}{CSS Frameworks:}
+\vspace{-1.0em}\begin{small}
+ \begin{multicols}{3}
+    \begin{itemize}
+\item Vue
+\item React
+\item Git
+    \end{itemize}
+    \end{multicols}\end{small}
+
+% \vspace{1.0em}
+
+\section{Education}
+\cventry{}{}{Trichandra Multiple Campus}{2018 -- Present}{\hspace*{-2.5 mm} Bachelor of Science }{Major in Physics, Minor in Statistics and Mathematics}
+
+  
+  
+\end{document}
